@@ -2,15 +2,21 @@
     box-sizing: border-box;
 }
 
+body {
+    padding: 40px;
+}
+
+button {
+    width: 7rem;
+    height: 3rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
 .container {
     background-color: #ddd;
     width: 500px;
     height: 500px;
     display: flex;
     flex-flow: wrap;
-    margin: 40px;
-}
-
-.container > div {
-    border: 1px solid black;
 }
