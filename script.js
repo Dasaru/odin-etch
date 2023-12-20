@@ -6,7 +6,7 @@ createGrid();
 
 container.addEventListener("mouseover", e => {
     if (e.target !== e.currentTarget) {
-        e.target.style.backgroundColor = "#777";
+        e.target.style.backgroundColor = createRGBColor();
     }
 });
 
@@ -36,4 +36,11 @@ function createNewGrid() {
     } else {
         alert("Error: Size must be between 5 and 100!");
     }
+}
+
+function createRGBColor() {
+    const red = Math.floor(Math.random()*256);
+    const blue = Math.floor(Math.random()*256);
+    const green = Math.floor(Math.random()*256);
+    return `rgb(${red}, ${blue}, ${green})`;
 }
