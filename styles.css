@@ -4,14 +4,13 @@
 
 .container {
     background-color: #ddd;
-    width: 320px;
-    height: 320px;
+    width: 500px;
+    height: 500px;
     display: flex;
     flex-flow: wrap;
     margin: 40px;
 }
 
 .container > div {
-    width: 20px;
-    height: 20px;
+    border: 1px solid black;
 }
